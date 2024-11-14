@@ -4,6 +4,8 @@ import pytesseract
 from sympy import * 
 import os
 
+os.system("apt-get update && apt-get install -y tesseract-ocr")
+
 def extract_problem_text(image):
     try:
         # Use Tesseract OCR to extract text from the image
